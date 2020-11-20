@@ -1,0 +1,52 @@
+div{
+  height: 170px;
+  width: 170px;
+  display: block;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.first{
+  background: rgb(218, 249, 55);
+}
+.first:hover{
+  transform: rotate(360deg);
+  transition-duration: 3s;
+}
+
+.second{
+  background: rgb(131, 66, 194);
+}
+
+.second:hover{
+  transform: scale(1) skew(20deg, 50deg);
+  transition-duration: 3s;
+}
+
+.third{
+  background: rgb(213, 78, 156);
+}
+
+.third:hover{
+  transform: scale(0.5) rotate(150deg);
+  transition-duration: 3s;
+}
+
+.forth{
+  background: rgb(88, 179, 208);
+}
+
+.forth:hover{
+  transform: scale(0.8) translate(10px, 50px);
+  transition-duration: 3s;
+}
+
+.fifth{
+  background: rgb(63, 210, 61);
+  margin: 100px;
+}
+
+.fifth:hover{
+  transform: rotate3d(1, 1, 1, 30deg) matrix3d(1,0,0,0,0,1,6,0,0,0,1,0,5,10,0,1.1);
+  transition-duration: 3s;
+}

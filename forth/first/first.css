@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200&display=swap');
+
+body{
+  font-family: 'Piazzolla', serif;
+}
+
+.first{
+  color: rgb(142, 125, 43);
+  font-size: 120%;
+  font-weight: bolder;
+}
+.second{
+  color: rgb(176, 34, 113);
+  font-size: 120%;
+}
+
+.third{
+  color: rgb(105, 51, 186);
+  font-weight: lighter;
+}
+
+.forth{
+  color: rgb(154, 80, 46);
+  font-size: 150%;
+}
+
+.fifth{
+  color: rgb(139, 20, 107);
+  font-size: 150%;
+  font-weight: bold;
+}

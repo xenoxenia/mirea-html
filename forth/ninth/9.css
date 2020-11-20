@@ -1,0 +1,45 @@
+.button1{
+  background: rgb(69, 36, 50);
+  color: rgb(156, 128, 136);
+  width: 120px;
+  height: 120px;
+}
+.button1:hover{
+  transform: rotateX(90deg);
+  transition-duration: 3s;
+}
+
+.button2{
+  background: rgb(103, 33, 187);
+  color: rgb(196, 177, 227);
+  height: 100px;
+  box-shadow: inset 5px 5px 20px 15px #711699,
+                     0 0 0 0;
+  width: 120px;
+}
+
+.button2:hover{
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(86, 9, 121, 0.78) 35%, rgba(187, 133, 178, 1) 100%);
+  box-shadow: inset 0 0 0 0,
+              10px 5px 10px 1px rgb(110, 25, 176);
+  transition-duration: 1.5s;
+}
+
+.button3{
+  background: radial-gradient(circle at 100%, #45154e, #c86262 50%, #961313 75%, #961313 75%);
+  box-shadow: 0 0 0 0;
+  width: 100px;
+  height: 100px;
+}
+
+.button3:hover{
+  background: radial-gradient(circle at 100%, #961313, #961313 50%, #c86262 75%, #45154e 75%);
+  box-shadow: 2px 3px 0px 3px rgb(80, 15, 133);
+  border-radius: 10px 10px;
+  transition-duration: 1.5s;
+}
+
+div{
+  display: flex;
+  justify-content: space-around;
+}

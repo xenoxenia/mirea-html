@@ -1,0 +1,39 @@
+.per10{
+  background: #b90d0d;
+  display: block;
+  height: 20px;
+  width: 23px;
+}
+.colo{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.main{
+  display: flex;
+  font-weight: bold;
+  justify-content: flex-start;
+}
+.per25{
+  background: #d96a26;
+  display: block;
+  height: 50px;
+  width: 23px;
+}
+.per50{
+  background: #f2ef1f;
+  display: block;
+  height: 100px;
+  width: 23px;
+}
+.per75{
+  background: #44e62d;
+  display: block;
+  height: 125px;
+  width: 23px;
+}
+.per100{
+  background: #1a5212;
+  display: block;
+  height: 200px;
+  width: 23px;
+}

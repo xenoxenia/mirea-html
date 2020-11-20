@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+thead{
+  color: rgb(16, 69, 166);
+}
+table{
+  border-spacing: 20px;
+  font-family: 'Lato', sans-serif;
+  margin: 5px;
+  text-align: left;
+}
+
+th, td{
+  padding: 10px;
+}
+
+tbody{
+  color: rgb(154, 143, 152);
+}
+table + thead, tr:first-child, td{
+  border-bottom: 3px solid #1181c6;
+}

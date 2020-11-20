@@ -1,0 +1,15 @@
+div {
+  border: 1px solid #9101df;
+  font: italic 35px serif;
+  height: 100px;
+  text-align: center;
+  width: 100%;
+}
+.number {
+  border-top: 2px solid black;
+  line-height: 100px;
+}
+.radical {
+  font-size: 40px;
+  vertical-align: -4px;
+}

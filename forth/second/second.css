@@ -1,0 +1,21 @@
+.Bp{
+  color: rgb(230, 199, 172);
+  text-decoration: overline;
+  text-decoration-style: double;
+}
+
+ol{
+  color: rgb(228, 37, 149);
+}
+
+.Ap{
+  color: rgb(164, 84, 194);
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+.Gp{
+  color:rgb(142, 81, 129);
+  text-decoration: line-through;
+  text-decoration-style: dotted;
+}

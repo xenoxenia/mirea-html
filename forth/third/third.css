@@ -1,0 +1,27 @@
+tbody{
+  background: url("https://64.media.tumblr.com/b3e8746da4be33781f9a197796c4b515/tumblr_p936ynVBai1s1lskso1_1280.jpg");
+
+  size: 120%;
+  text-align: left;
+}
+th{
+  border-bottom: 1px solid #F4EEE8;
+  padding-right: 5rem;
+  padding-top: 1rem;
+}
+
+thead{
+  background: #ffff;
+  border: #ffffff;
+  size: 120%;
+  text-align: left;
+}
+table{
+    border-collapse: collapse;
+    color: #9217b3;
+}
+
+tr:hover{
+  background: rgb(123, 17, 126);
+  color: rgb(70, 3, 67);
+}
