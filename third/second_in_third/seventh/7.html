@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <style>
+        input:valid + span:after {
+            content: url(71.jpg); //
+        }
+        input:invalid + span:after {
+            content: url(../seventh/7.jpg);
+        }
+    </style>
+</head>
+<body>
+<p>Имя пользователя <input type="text" size="50" required><span></span></p>
+<p>Сколько вам лет? <input type="number" min="0" required><span></span></p>
+<p>Вы учитесь или работаете? <input type="text" size="22" required><span></span></p>
+<p>Сколько у вас свободного времени? <input type="text" required><span></span></p>
+<p>Что вы обычно делаете в свободное время? <input type="text" required><span></span></p>
+<p><input type="submit" value="Отправить"></p>
+</body>
+</html>
