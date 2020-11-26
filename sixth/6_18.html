@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      let arr = [1, 2, 3, 4, 5];
+      arr.splice(1, 2);
+      document.write(arr);
+
+      let arr1 = [1, 2, 3, 4, 5];
+      arr1.splice(5, 0, '2', '3', '4');
+      document.write("<br>" + arr1);
+
+      let arr2 = [1, 2, 3, 4, 5];
+      arr2.splice(3, 0, 'a', 'b', 'c');
+      document.write("<br>" + arr2);
+
+      let arr3 = [1, 2, 3, 4, 5];
+      arr3.splice(1, 0, 'a', 'b');
+      arr3.splice(6, 0, 'c');
+      arr3.splice(8, 0, 'e');
+      document.write("<br>" + arr3);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      let str = 'eyes like a carcrush i know i shouldnt look but i cant turn away'
+      let n = 20;
+      let n1 = 70;
+      let result;
+      let result1;
+      document.write(str.length);
+      if(str.length>n){
+        result = str.substr(0, n)+'...';
+      }
+      else{
+        result = str;
+      }
+
+      if(str.length>n1){
+        result1 = str.substr(0, n1)+'...';
+      }
+      else{
+        result1 = str;
+      }
+      document.writeln("<br>" + result + "<br>" + result1);
+    </script>
+  </body>
+</html>
