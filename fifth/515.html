@@ -6,11 +6,8 @@
   </head>
   <body>
     <script>
-      let hour = 12;
-      let minute = 20;
-      let sec = 13;
-
-      document.write(hour, ':', minute, ':', sec);
+      let data = new Date();
+      document.write(data.getHours() + ':' + data.getMinutes() + ':' + data.getSeconds());
     </script>
   </body>
 </html>
