@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Введите ваш ник</p>
+    <input maxlength="25" size="40" type="text" value="woof" id = "plhd">
+    <button onclick="func()">нажми меня</button>
+<br><br><br>
+
+    <img src="https://64.media.tumblr.com/34f611448fb743f9992b9ee174da4748/tumblr_ol282sGDvy1tht5bro1_1280.jpg" onclick="imgscr()" id="imgid" width="350" height="300">
+    <script>
+      function func(){
+        elem = document.getElementById('plhd');
+        elem.value = 'meow';
+      }
+
+      function imgscr(){
+        elemim = document.getElementById('imgid');
+        elemim.src = "https://64.media.tumblr.com/5220aa760121d3419d8ffc08ce1c5fda/tumblr_pipy80YmPj1vmvaaq_540.png";
+      }
+    </script>
+  </body>
+</html>
