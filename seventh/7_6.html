@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!--6.1-->
+    <p>My secrets are burning a hole through my heart
+      And my bones catch a fever
+      When it cuts you up this deep
+      It's hard to find a way to breathe</p>
+    <p>Your eyes are swallowing me
+      Mirrors start to whisper, shadows start to sing
+      My skin's smothering me
+      Help me find a way to breathe</p>
+    <p>Time stood still the way it did before
+      It's like I'm sleepwalking
+      Fell into another hole again
+      It's like I'm sleepwalking</p>
+      <button onclick="func()">click</button>
+
+
+
+    <!--6.2-->
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+
+	  <button type="button" onclick="nums()">click</button>
+      <script>
+       <!--6.1-->
+        function func(){
+          const elem = document.getElementsByTagName('p');
+          for (var i = 0; i < 2; i++) {
+            elem[i].innerHTML = 'boom';
+          }
+        }
+
+        <!--6.2-->
+        function nums(){
+          let end;
+          let k;
+          let elems = document.getElementsByTagName('p');
+          for (var i = 0; i < elems.length; i++) {
+            end = elems[i].innerHTML;
+            k = i+1;
+            elems[i].innerHTML = '0' + k + '.' + ' ' + end;
+          }
+        }
+
+
+      </script>
+  </body>
+</html>
