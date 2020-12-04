@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" value="я послушала sugar, honey, ice&tea 368 раз за 3 месяца" id="shiandt" style="width: 400px;">
+    <button onclick="change()">spotify спасибо</button>
+    <br><br>
+
+    <input type="text" value="corpse bride крутой мультик" id="corpse" style="width: 400px;">
+    <button onclick="hide()">пока-пока</button>
+    <button onclick="hi()">обратно верните</button>
+    <script>
+      function change(){
+        elem = document.getElementById('shiandt');
+        elem.style.color = 'rgb(65, 95, 167)';
+        elem.style.width = '300px';
+        elem.value = "и я послушаю ее еще столько же";
+        elem.style.borderRadius = '15px';
+      }
+
+      function hide(){
+        elem1 = document.getElementById('corpse');
+        elem1.style.display = 'none';
+      }
+
+      function hi(){
+        elem2 = document.getElementById('corpse')
+        elem2.style.display = 'block';
+      }
+
+    </script>
+  </body>
+</html>

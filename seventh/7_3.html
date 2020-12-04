@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" value="woof" onfocus="func1(this)" onblur="func2(this)">
+<br><br>
+
+<button id = "b1" onclick="bye(this)">Стану неактивной</button>
+<button onclick="hi()">Активирую первую кнопочку</button>
+<br><br>
+
+<input type="submit" onclick="count(this)" value="0">
+
+    <script>
+
+      function func1(elem){
+        elem.value = ('meow');
+      }
+
+      function func2(elem){
+        elem.value = ('woof');
+      }
+
+      function bye(elem){
+			  elem.disabled = true;
+		  }
+
+		  function hi(){
+			  elem = document.getElementById('b1');
+			  elem.disabled = false;
+		  }
+
+      function count(elem){
+        elem.value++;
+      }
+    </script>
+  </body>
+</html>
