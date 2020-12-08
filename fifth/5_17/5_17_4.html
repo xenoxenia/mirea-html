@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      let num;
+      let str;
+      let arr = [10, 20, 30, 50, 235, 3000];
+      for(let i = 0; i<arr.length; i++){
+        str = arr[i].toString();
+        num = str.substring(0, 1);
+
+        if ((num == 1) || (num == 2) || (num == 5)) {
+          document.write(arr[i] + ' ');
+        }
+      }
+    </script>
+  </body>
+</html>
