@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="test"> 0 </p>
+    <button onclick="set()">we will push the button</button>
+    <br><br>
+    <script>
+
+    function set(){
+      window.setInterval(timer, 1000);
+    }
+    function timer(){
+      let test = document.getElementById('test');
+      test.innerHTML = parseInt(test.innerHTML)+1;
+    }
+
+    </script>
+  </body>
+</html>

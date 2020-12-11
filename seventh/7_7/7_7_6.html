@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="dhtvz"> 0 </p>
+		<input type="submit" value="Кронк жми на рычаг"  onclick="go()" id="go">
+		<input type="submit" value="НЕ ТОТ РЫЧАГ"  onclick="stop()"  id="stop" disabled>
+
+    <script>
+    function go(){
+			window.timerId = window.setInterval(time, 500);
+			document.getElementById('go').disabled = true;
+			document.getElementById('stop').disabled = false;
+		}
+		function stop(){
+			window.clearInterval(window.timerId);
+			document.getElementById('go').disabled = false;
+			document.getElementById('stop').disabled = true;
+		}
+		function time(){
+			let test = document.getElementById('dhtvz');
+			test.innerHTML = parseInt(test.innerHTML)+1;
+		}
+    </script>
+  </body>
+</html>
