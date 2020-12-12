@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!--6.2-->
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+    <p>Абзац с текстом.</p>
+
+	  <button type="button" onclick="nums()">click</button>
+      <script>
+        <!--6.2-->
+        function nums(){
+          let end;
+          let k;
+          let elems = document.getElementsByTagName('p');
+          for (var i = 0; i < elems.length; i++) {
+            end = elems[i].innerHTML;
+            k = i+1;
+            elems[i].innerHTML = '0' + k + '.' + ' ' + end;
+          }
+        }
+
+
+      </script>
+  </body>
+</html>

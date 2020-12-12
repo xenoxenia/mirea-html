@@ -1,10 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <style>
+      #wrapper
+      {
+        text-align: center;
+      }
+    </style>
+    <script>
+    function go() {
+      window.timerId = window.setInterval(timer, 1000);
+    }
+    function timer() {
+      if (window.number == undefined || window.number == 4) {
+        window.number = 1;
+      } else window.number = window.number + 1;
+      var img = document.getElementById("img");
+      img.src = window.number + ".gif";
+    }
+    function stop(){
+      window.clearInterval(window.timerId);
+    }
+    </script>
   </head>
   <body>
-    
+    <div id="wrapper">
+      <img src="1.gif" id="img" width="300" height="300">
+    </div>
+    <button onclick="go()">thnk u next</button>
+    <button onclick="stop()">stooop</button>
   </body>
 </html>

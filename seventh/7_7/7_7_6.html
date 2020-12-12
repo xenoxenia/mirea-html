@@ -1,29 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <p id="dhtvz"> 0 </p>
-		<input type="submit" value="Кронк жми на рычаг"  onclick="go()" id="go">
-		<input type="submit" value="НЕ ТОТ РЫЧАГ"  onclick="stop()"  id="stop" disabled>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style>
 
-    <script>
-    function go(){
-			window.timerId = window.setInterval(time, 500);
-			document.getElementById('go').disabled = true;
-			document.getElementById('stop').disabled = false;
+		#wrapper {
+      font-size: 240%;
+			justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
 		}
-		function stop(){
-			window.clearInterval(window.timerId);
-			document.getElementById('go').disabled = false;
-			document.getElementById('stop').disabled = true;
+
+	</style>
+	<script>
+        function go(){
+			window.timerId = window.setInterval(timer, 1000);
 		}
-		function time(){
-			let test = document.getElementById('dhtvz');
-			test.innerHTML = parseInt(test.innerHTML)+1;
+		function timer(){
+			var seconds = document.getElementById('seconds');
+			var minutes = document.getElementById('minutes');
+			var hours = document.getElementById('hours');
+			var now = new Date();
+			var midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1, 0, 0, 0);
+			var diff =  Math.floor((midnight - now)/1000);
+			var hoursRemain   = Math.floor(diff/(60*60));
+			var minutesRemain = Math.floor((diff-hoursRemain*60*60)/60);
+			var secondsRemain = Math.floor(diff%60);
+			hours.innerHTML   = hoursRemain;
+			minutes.innerHTML = addZero(minutesRemain);
+			seconds.innerHTML = addZero(secondsRemain);
 		}
-    </script>
-  </body>
+		function addZero(num){
+			if(num <=9) return '0'+num;
+				else return num;
+		}
+	</script>
+</head>
+<body onload="go()">
+	<div id="wrapper">
+				<div id="hours"></div>
+        <div class="dv">:</div>
+				<div id="minutes"></div>
+        <div class="dv">:</div>
+				<div id="seconds"></div>
+	</div>
+</body>
 </html>

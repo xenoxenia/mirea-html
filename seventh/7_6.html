@@ -21,18 +21,6 @@
       <button onclick="func()">click</button>
 
 
-
-    <!--6.2-->
-    <p>Абзац с текстом.</p>
-    <p>Абзац с текстом.</p>
-    <p>Абзац с текстом.</p>
-    <p>Абзац с текстом.</p>
-    <p>Абзац с текстом.</p>
-    <p>Абзац с текстом.</p>
-    <p>Абзац с текстом.</p>
-    <p>Абзац с текстом.</p>
-
-	  <button type="button" onclick="nums()">click</button>
       <script>
        <!--6.1-->
         function func(){
@@ -41,19 +29,6 @@
             elem[i].innerHTML = 'boom';
           }
         }
-
-        <!--6.2-->
-        function nums(){
-          let end;
-          let k;
-          let elems = document.getElementsByTagName('p');
-          for (var i = 0; i < elems.length; i++) {
-            end = elems[i].innerHTML;
-            k = i+1;
-            elems[i].innerHTML = '0' + k + '.' + ' ' + end;
-          }
-        }
-
 
       </script>
   </body>
