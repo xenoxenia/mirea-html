@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+      #elem {
+        width: 150px;
+        height: 150px;
+        border: 2px solid black;
+        overflow: auto;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="elem">
+      Эх, как же хочется худенькую, бледную, не очень высокую, девственную, нецелованную, с тонкими руками, небольшими ступнями, синяками под глазами, растрёпанными или неуложенными волосами, ненакрашенную, забитую хикку, лохушку без друзей и подруг, закрытую социофобку, одновременно мечтающую о ком-то близком, чтобы зашёл к ней в мирок, но ничего не ломал по возможности, дабы вместе с ней изолироваться от неприятного социума.
+    </div>
+    <br>
+    <button onclick="func()">и где</button>
+    <button onclick="scrolll()">на 200 пкс</button>
+    <button onclick="bott()">на 200 от низа</button>
+
+    <script>
+      function func() {
+        let elem = document.querySelector("#elem");
+        alert(elem.scrollTop);
+      }
+      function scrolll(){
+        let elem = document.querySelector('#elem');
+        elem.scrollTop = 200;
+      }
+      function bott(){
+        let elem = document.querySelector("#elem");
+        elem.scrollTop = elem.scrollHeight - 389; <!--паддинги сверху и снизу по 10-->
+      }
+    </script>
+  </body>
+</html>
