@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>715</title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font: 75%/120% sans-serif;
+      }
+
+      h2 {
+        font: bold 190%/100% sans-serif;
+        margin: 0 0 0.2em;
+      }
+
+      h2 em {
+        font: normal 80%/100% sans-serif;
+        color: black;
+      }
+
+      #largeImg {
+        border: solid 1px #ccc;
+        width: 550px;
+        height: 400px;
+        padding: 5px;
+      }
+
+      #thumbs a {
+        border: solid 1px #ccc;
+        width: 100px;
+        height: 100px;
+        padding: 3px;
+        margin: 2px;
+        float: left;
+      }
+
+      #thumbs a:hover {
+        border-color: yellow;
+      }
+
+      #thumbs li {
+        list-style: none;
+      }
+
+      #thumbs {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <img id="largeImg" src="https://64.media.tumblr.com/3f6a9d6aaa60ed733e3630edca0648dc/tumblr_or1cwiPQv51uiyjnoo1_1280.jpg">
+    </p>
+    <ul id="thumbs">
+      <li>
+        <a href="https://64.media.tumblr.com/f4f457459c0fe183f17bee59b90b3f6b/tumblr_p7lofrMtrA1ui670jo1_500.jpg" title="манчкин"
+          > <img src="https://64.media.tumblr.com/f4f457459c0fe183f17bee59b90b3f6b/tumblr_p7lofrMtrA1ui670jo1_500.jpg" height="100" width="100"
+        /></a>
+      </li>
+      <li>
+        <a href="https://64.media.tumblr.com/54453da012cf412cd31d7501d3305d98/5255bb07367ca21e-99/s500x750/c6913b530dacdeeef840db9928e78b4c878e5590.gif" title="howl's moving castle"
+          ><img src="https://64.media.tumblr.com/54453da012cf412cd31d7501d3305d98/5255bb07367ca21e-99/s500x750/c6913b530dacdeeef840db9928e78b4c878e5590.gif" height="100" width="100"
+        /></a>
+      </li>
+      <li>
+        <a href="https://64.media.tumblr.com/16eece791bce948a9c21a4b80899bbee/56745b3eea5e3d07-80/s500x750/473a62a9871ecdac4cf1e1014e4b16dce92cc8ac.gif" title="howl's moving castle"
+          ><img src="https://64.media.tumblr.com/16eece791bce948a9c21a4b80899bbee/56745b3eea5e3d07-80/s500x750/473a62a9871ecdac4cf1e1014e4b16dce92cc8ac.gif" height="100" width="100"
+        /></a>
+      </li>
+      <li>
+        <a href="https://64.media.tumblr.com/1c4662f210e5989c16e0d2802adc1d43/d3b9847f95a6f0d7-db/s500x750/d681014cd1cd54b08a8d9c966c085450a6d6f6a5.gif" title="howl's moving castle"
+          ><img src="https://64.media.tumblr.com/1c4662f210e5989c16e0d2802adc1d43/d3b9847f95a6f0d7-db/s500x750/d681014cd1cd54b08a8d9c966c085450a6d6f6a5.gif" height="100" width="100"
+        /></a>
+      </li>
+      <li>
+        <a href="https://64.media.tumblr.com/5a67c6b21911106bd1571dccdf047ca6/6016c4c51ddd6896-6c/s500x750/375bb7e36c60c6342d3f438f9cf842beb497bf87.gif" title="howl's moving castle"
+          ><img src="https://64.media.tumblr.com/5a67c6b21911106bd1571dccdf047ca6/6016c4c51ddd6896-6c/s500x750/375bb7e36c60c6342d3f438f9cf842beb497bf87.gif" height="100" width="100"
+        /></a>
+      </li>
+    </ul>
+    <script>
+      thumbs.onclick = function (event) {
+        let thumbnail = event.target.closest("a");
+        if (!thumbnail) return;
+        showThumbnail(thumbnail.href, thumbnail.title);
+        event.preventDefault();
+      };
+      function showThumbnail(href, title) {
+        largeImg.src = href;
+        largeImg.alt = title;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <style>
+    .tree span:hover {
+      font-weight: bold;
+    }
+    .tree span {
+      cursor: pointer;
+    }
+  </style>
+  <meta charset="utf-8">
+</head>
+<body>
+  <ul class="tree" id="tree">
+    <li>Ряды (потому что ради чего еще жить?)
+      <ul>
+        <li>Сходимость рядов
+          <ul>
+            <li>Даламлер лучший попробуйте переубедить меня</li>
+            <li>Предельный признак сравнения 10/10</li>
+            <li>Радикальный признак Коши</li>
+          </ul>
+        </li>
+        <li>Посложнее
+          <ul>
+            <li>Признак Лейбница</li>
+            <li>Признак Раабе</li>
+            <li>Признак Дирихле</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Самые милые котики и собачки
+      <ul>
+        <li>Котики
+          <ul>
+            <li>Манчкины(мне их жалко, но они такие милые)</li>
+            <li>Британцы</li>
+            <li>Все котята</li>
+          </ul>
+        </li>
+        <li>Собачки
+          <ul>
+            <li>ЗОЛОТЫЕ РЕТРИВЕРЫ</li>
+            <li>САМОЕДСКИЕ СОБАЧКИ</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <script>
+    for (let li of tree.querySelectorAll('li')) {
+      let span = document.createElement('span');
+      li.prepend(span);
+      span.append(span.nextSibling); }
+    tree.onclick = function(event) {
+      if (event.target.tagName != 'SPAN') {
+        return;
+      }
+      let childrenContainer = event.target.parentNode.querySelector('ul');
+      if (!childrenContainer) return;
+      childrenContainer.hidden = !childrenContainer.hidden;
+    }
+  </script>
+</body>
+</html>
