@@ -2,7 +2,6 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" href="style.css">
 <script>function animate(options) {
 
   let start = performance.now();
@@ -22,34 +21,34 @@
     }
 
   });
-}</script>
+  }</script>
 </head>
 <body>
-<textarea id="textExample" rows="3" cols="45">все знают этих 💀я начинающий рэпер💀 парней
+  <textarea id="textExample" rows="3" cols="45">все знают этих 💀я начинающий рэпер💀 парней
 в ит сообществе эти парни начинающие стримеры
-</textarea>
-<button onclick="animateText(textExample)">Старт</button>
-<script>
-function animateText(textArea) {
-let text = textArea.value;
-let to = text.length,
-from = 0;
-animate({
-duration: 10000,
-timing: bounce,
-draw: function(progress) {
-let result = (to - from) * progress + from;
-textArea.value = text.substr(0, Math.ceil(result))
-}
-});
-}
-function bounce(timeFraction) {
-for (let a = 0, b = 1, result; 1; a += b, b /= 2) {
-if (timeFraction >= (7 - 4 * a) / 11) {
-return -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
-}
-}
-}
-</script>
+  </textarea>
+  <button onclick="animateText(textExample)">Старт</button>
+  <script>
+    function animateText(textArea) {
+      let text = textArea.value;
+      let to = text.length,
+      from = 0;
+        animate({
+          duration: 10000,
+          timing: bounce,
+        draw: function(progress) {
+          let result = (to - from) * progress + from;
+          textArea.value = text.substr(0, Math.ceil(result))
+        }
+      });
+    }
+    function bounce(timeFraction) {
+      for (let a = 0, b = 1, result; 1; a += b, b /= 2) {
+        if (timeFraction >= (7 - 4 * a) / 11) {
+          return -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2);
+        }
+      }
+    }
+  </script>
 </body>
 </html>
